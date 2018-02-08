@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<script type="text/javascript">
+	function val1() {
+      var e = document.getElementById('text');
+       e.value += 1;
+	}
+	function val2() {
+		 var f = document.getElementById('text');
+       f.value += 2;
+	}
+	function val3() {
+		 var g = document.getElementById('text');
+       g.value += 3;
+	}
+	function val4() {
+		 var h = document.getElementById('text');
+       h.value += 4;
+	}
+	function val5() {
+		 var i = document.getElementById('text');
+       i.value += 5;
+	}
+	function val6() {
+	    var j = document.getElementById('text');
+       j.value += 6;	
+	}
+	function val7() {
+		 var k = document.getElementById('text');
+       k.value += 7;
+	}
+	function val8() {
+		 var l = document.getElementById('text');
+       l.value += 8;
+	}
+	function val9() {
+	   var m = document.getElementById('text');
+       m.value += 9;	
+	}
+	function zero() {
+         var n = document.getElementById('text');
+       n.value += 0;
+	}
+	function multiplication() {
+            var o = document.getElementById('text');
+       o.value += "*";
+	}
+	function divide() {
+                  var p = document.getElementById('text');
+       p.value += "/";
+	}
+	function plusval() {
+             var q = document.getElementById('text');
+       q.value += "+";
+	}
+	function minus() {
+         var r = document.getElementById('text');
+       r.value += "-";
+	}
+	function clean() {
+		 var s = document.getElementById('text');
+       s.value = "";
+	}
+	function equal() {
+		var t = document.getElementById('text');
+		var rob = eval(t.value);
+		t.value = rob;
+	}
+</script>
+<style type="text/css">
+	h1 {
+		color: #ddd;
+		text-align: center;
+		margin-top: 10px;
+		font-family: sans-serif;
+	}
+	#calculator {
+		border: 1px solid #ddd;
+		width: 300px;
+	height: 350px;
+	margin-left: 500px;
+	margin-top: 100px;
+	}
+	#calculator input {
+		margin-top: 20px;
+		margin-left: 25px;
+		border: 1px solid #ddd;
+		width: 250px;
+		height: 40px;
+	}
+	#cal1 button {
+		width: 60px;
+		height: 38px;
+		margin-top: 15px;
+	}
+	#one {
+      margin-left: 25px;
+	}
+	#four {
+		margin-left: 25px;
+	}
+	#seven {
+		margin-left: 25px;
+	}
+	#equal {
+		margin-left: 25px;
+	}
+</style>
+<body>
+	<h1>Simple calculator in javascript</h1>
+	<div id="calculator">
+		<input type="text" name="text" id="text"><br>
+		<div id="cal1">
+		<button type="submit" id="one" onclick="val1()" >1</button>
+		<button type="submit" id="two" onclick="val2()">2</button>
+		<button type="submit" id="three" onclick="val3()">3</button>
+		<button type="submit" id="plus" onclick="plusval()">+</button><br>
+		<button type="submit" id="four" onclick="val4()" >4</button>
+		<button type="submit" id="five" onclick="val5()">5</button>
+		<button type="submit" id="six"  onclick="val6()">6</button>
+		<button type="submit" id="minus" onclick="minus()">-</button><br>
+		<button type="submit" id="seven" onclick="val7()">7</button>
+		<button type="submit" id="eight" onclick="val8()">8</button>
+		<button type="submit" id="nine" onclick="val9()" >9</button>
+		<button type="submit" id="/" onclick="divide()">/</button><br>
+		<button type="submit" id="equal" onclick="equal()">=</button>
+		<button type="submit" id="clear" onclick="clean()">C</button>
+		<button type="submit" id="zero" onclick="zero()">0</button>
+		<button type="submit" id="mult" onclick="multiplication()">*</button><br>
+	</div>
+	</div>
+
+</body>
+</html>
